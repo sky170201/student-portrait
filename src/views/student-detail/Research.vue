@@ -31,9 +31,11 @@
     </el-row>
     <div class="lineBlock"></div>
     <el-table :data="tableData" border style="width: 100%">
-      <el-table-column prop="date" label="Date" width="180" />
-      <el-table-column prop="name" label="Name" width="180" />
-      <el-table-column prop="address" label="Address" />
+      <el-table-column prop="date" label="学年学期" />
+      <el-table-column prop="name" label="课程名称" />
+      <el-table-column prop="address" label="学分" />
+      <el-table-column prop="address" label="成绩" />
+      <el-table-column prop="name" label="是否重修" />
     </el-table>
   </div>
   <div class="descriptions__title">科研创新</div>
@@ -78,9 +80,9 @@
     </el-row>
     <div class="lineBlock"></div>
     <el-table :data="tableData" border style="width: 100%">
-      <el-table-column prop="date" label="Date" width="180" />
-      <el-table-column prop="name" label="Name" width="180" />
-      <el-table-column prop="address" label="Address" />
+      <el-table-column prop="date" label="成果名称" />
+      <el-table-column prop="name" label="成果类别" />
+      <el-table-column prop="address" label="取得时间" />
     </el-table>
   </div>
 </template>
