@@ -11,7 +11,7 @@
   <div class="container">
     <PersonInfo v-if="activeName === 'A'"></PersonInfo>
     <Research v-if="activeName === 'B'"></Research>
-    <div v-if="activeName === 'C'"></div>
+    <RewardsPunishment v-if="activeName === 'C'"></RewardsPunishment>
     <div v-if="activeName === 'D'"></div>
     <div v-if="activeName === 'E'"></div>
   </div>
@@ -24,6 +24,7 @@ import Header from '@/components/Header.vue'
 import Detail from './Detail.vue'
 import PersonInfo from './PersonInfo.vue'
 import Research from './Research.vue'
+import RewardsPunishment from './RewardsPunishment.vue'
 
 const studentInfo = reactive({
 
