@@ -42,6 +42,9 @@
         </table>
       </div>
     </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <el-button type="primary" @click="toDetail">跳转至详情</el-button>
+    </div>
   </div>
 </template>
 
@@ -55,6 +58,9 @@ export default {
     }
   },
   methods: {
+    toDetail() {
+      this.$router.push('/student-detail')
+    },
     gotoHight() {
       this.$router.push("/selectheight")
     },
